@@ -16,6 +16,24 @@ package sort;
  * these algorithms can take a long time to run. In order to solve the time complexity we can use merge sort and quick sort,
  * whose running times are better. In particular, merge sort runs in Θ(nlogn) time in all cases, and 
  * quick sort runs in Θ(nlogn) time in the best case and on average, though its worst-case running time is Θ(n2) 
+ * 
+ * Divide-and-conquer:
+ * 
+ * Both merge sort and quicksort employ a common algorithmic paradigm based on recursion. This paradigm, divide-and-conquer, 
+ * breaks a problem into subproblems that are similar to the original problem, recursively solves the subproblems, and 
+ * finally combines the solutions to the subproblems to solve the original problem.
+ * 
+ * Because divide-and-conquer solves subproblems recursively, each subproblem must be smaller than the original problem, 
+ * and there must be a base case for subproblems. 
+ * 
+ * You should think of a divide-and-conquer algorithm as having three parts:
+ * 
+ * 1. Divide - the problem into a number of subproblems that are smaller instances of the same problem.
+ * 2. Conquer - the subproblems by solving them recursively. If they are small enough, solve the subproblems as base cases.
+ * 3. Combine - the solutions to the subproblems into the solution for the original problem.
+ * 
+ * You can easily remember the steps of a divide-and-conquer algorithm as divide, conquer, combine. Here's how to view one step, 
+ * assuming that each divide step creates two subproblems (though some divide-and-conquer algorithms create more than two):
  *
  */
 public class MergeSort {
@@ -105,5 +123,4 @@ public class MergeSort {
 			}
 		}
 	}	
-
 }
